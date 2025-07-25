@@ -1,0 +1,29 @@
+[project]
+name = "pororo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fairseq",
+    "g2p-en",
+    "joblib",
+    "kss",
+    "lxml",
+    "marisa-trie",
+    "nltk",
+    "pillow",
+    "sentence-transformers",
+    "torch",
+    "torchvision",
+    "transformers",
+    "wget",
+    "whoosh",
+    "word2word",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-runner",
+]
