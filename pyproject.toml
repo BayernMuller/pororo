@@ -1,16 +1,14 @@
-[tool.setuptools]
-packages = ["pororo"]
-
-[tool.setuptools.packages.find]
-include = ["pororo*"]
-exclude = ["assets*"]
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "pororo"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.8"
+
 dependencies = [
     "fairseq",
     "g2p-en",
@@ -29,8 +27,12 @@ dependencies = [
     "word2word",
 ]
 
-[dependency-groups]
+[project.optional-dependencies]
 dev = [
     "pytest",
     "pytest-runner",
 ]
+
+[tool.setuptools.packages.find]
+include = ["pororo*"]
+exclude = ["assets*"]
