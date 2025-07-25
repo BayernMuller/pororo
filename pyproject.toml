@@ -1,3 +1,10 @@
+[tool.setuptools]
+packages = ["pororo"]
+
+[tool.setuptools.packages.find]
+include = ["pororo*"]
+exclude = ["assets*"]
+
 [project]
 name = "pororo"
 version = "0.1.0"
