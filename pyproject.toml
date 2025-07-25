@@ -7,24 +7,25 @@ name = "pororo"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10,<3.11"
 
 dependencies = [
-    "fairseq",
-    "g2p-en",
-    "joblib",
-    "kss",
-    "lxml",
-    "marisa-trie",
-    "nltk",
-    "pillow",
-    "sentence-transformers",
-    "torch",
-    "torchvision",
-    "transformers",
-    "wget",
-    "whoosh",
-    "word2word",
+    "dataclasses==0.8",
+    "fairseq==0.12.2",
+    "g2p-en==2.1.0",
+    "joblib==1.5.1",
+    "kss==5.2.0",
+    "lxml==6.0.0",
+    "marisa-trie==1.2.1",
+    "nltk==3.9.1",
+    "pillow==11.3.0",
+    "sentence-transformers==5.0.0",
+    "torch==2.3.1",
+    "torchvision==0.18.1",
+    "transformers==4.53.3",
+    "wget==3.2",
+    "whoosh==2.7.4",
+    "word2word==1.0.0",
 ]
 
 [project.optional-dependencies]
